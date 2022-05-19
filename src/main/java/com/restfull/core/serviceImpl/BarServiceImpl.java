@@ -1,12 +1,18 @@
 package com.restfull.core.serviceImpl;
 
+
+import com.restfull.core.entities.Bar;
+import com.restfull.core.repository.BarRepository;
+import com.restfull.core.service.BarService;
+
+
+
+
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.restfull.core.entities.Bar;
-import com.restfull.core.repository.BarRepository;
-import com.restfull.core.service.BarService;
+
 
 
 @Service
@@ -51,14 +57,16 @@ public class BarServiceImpl implements BarService{
 			Bar barToUpdate = new Bar();
 			barToUpdate.setIdBar(barUpdated.getIdBar());
 			barToUpdate.setNombreBar(barUpdated.getNombreBar());
-			barToUpdate.setDireccionBar(barUpdated.getDireccionBar());
 			barToUpdate.setTelefonoBar(barUpdated.getTelefonoBar());
+			barToUpdate.setDireccionBar(barUpdated.getDireccionBar());
 			barToUpdate.setCatPrecio(barUpdated.getCatPrecio());
-			barToUpdate.setHorarioBar(barUpdated.getHorarioBar());
 			barToUpdate.setAreabar(barUpdated.getAreabar());
 			barToUpdate.setCategoriaBar(barUpdated.getCategoriaBar());
-			barToUpdate.setCaracteristicaBar(barUpdated.getCaracteristicaBar());
 			barToUpdate.setDescripcionBar(barUpdated.getDescripcionBar());
+			barToUpdate.setEspecialidadesBar(barUpdated.getEspecialidadesBar());
+			barToUpdate.setRedesSociales(barUpdated.getRedesSociales());
+			
+			
 			barRepository.save(barToUpdate);
 			return "Bar modificado";
 		}

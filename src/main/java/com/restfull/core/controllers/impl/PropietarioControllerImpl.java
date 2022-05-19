@@ -53,17 +53,21 @@ public class PropietarioControllerImpl implements PropietarioController{
 	@Override
 	@RequestMapping(value = "/propietario/update", method = RequestMethod.PATCH, produces = "application/json")
 		public String updatePropietario(Propietario propietarioNew) {
-		// TODO Auto-generated method stub
 		return propietarioService.updatePropietario(propietarioNew);
 	}
 	
 	
 	// http://localhost:8888/test (GET)
-	@RequestMapping(value = "/test", method = RequestMethod.GET, produces = "application/json")
+	@RequestMapping(value = "/propietario/test", method = RequestMethod.GET, produces = "application/json")
 	@Override
 	public String test() {
 		return "Test done";
 	}
+	
+	
+	
+	
+	
 	
 	
 

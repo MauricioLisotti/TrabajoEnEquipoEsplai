@@ -14,38 +14,39 @@ public class Bar {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="IDBAR")
+	@Column(name="id")
 	Long idBar;
 	
 	@Column(name="NOMBRE")
 	String nombreBar;
-
-	@Column(name="DIRECCIONBAR")
-	String direccionBar;
 	
-	@Column(name="TELEFONOBAR")
+	@Column(name="TELEFONO")
 	String telefonoBar;
+	
+	@Column(name="DIRECCION")
+	String direccionBar;
 	
 	@Column(name="CATPRECIO")
 	String catPrecio;
 	
-	@Column(name="HORARIOBAR")
-	String horarioBar;
-	
-	@Column(name="AREABAR")
+	@Column(name="AREA")
 	String areabar;
 	
-	@Column(name="CATEGORIABAR")
+	@Column(name="CATEGORIA")
 	String categoriaBar;
-	
-	@Column(name="CARACTERISTICABAR")
-	String caracteristicaBar;
 	
 	@Column(name="DESCRIPCION")
 	String descripcionBar;
 
+	@Column(name="ESPECIALIDADES")
+	String especialidadesBar;
 	
+	@Column(name="redessociales")
+	String redessociales;
 
+	
+	
+	
 	public Long getIdBar() {
 		return idBar;
 	}
@@ -62,14 +63,6 @@ public class Bar {
 		this.nombreBar = nombreBar;
 	}
 
-	public String getDireccionBar() {
-		return direccionBar;
-	}
-
-	public void setDireccionBar(String direccionBar) {
-		this.direccionBar = direccionBar;
-	}
-
 	public String getTelefonoBar() {
 		return telefonoBar;
 	}
@@ -78,20 +71,20 @@ public class Bar {
 		this.telefonoBar = telefonoBar;
 	}
 
+	public String getDireccionBar() {
+		return direccionBar;
+	}
+
+	public void setDireccionBar(String direccionBar) {
+		this.direccionBar = direccionBar;
+	}
+
 	public String getCatPrecio() {
 		return catPrecio;
 	}
 
 	public void setCatPrecio(String catPrecio) {
 		this.catPrecio = catPrecio;
-	}
-
-	public String getHorarioBar() {
-		return horarioBar;
-	}
-
-	public void setHorarioBar(String horarioBar) {
-		this.horarioBar = horarioBar;
 	}
 
 	public String getAreabar() {
@@ -110,14 +103,6 @@ public class Bar {
 		this.categoriaBar = categoriaBar;
 	}
 
-	public String getCaracteristicaBar() {
-		return caracteristicaBar;
-	}
-
-	public void setCaracteristicaBar(String caracteristicaBar) {
-		this.caracteristicaBar = caracteristicaBar;
-	}
-	
 	public String getDescripcionBar() {
 		return descripcionBar;
 	}
@@ -125,4 +110,30 @@ public class Bar {
 	public void setDescripcionBar(String descripcionBar) {
 		this.descripcionBar = descripcionBar;
 	}
+
+	public String getEspecialidadesBar() {
+		return especialidadesBar;
+	}
+
+	public void setEspecialidadesBar(String especialidadesBar) {
+		this.especialidadesBar = especialidadesBar;
+	}
+
+	public String getRedesSociales() {
+		return redessociales;
+	}
+
+	public void setRedesSociales(String redesSociales) {
+		this.redessociales = redesSociales;
+	}
+	
+	/*
+	@Column(name="id_propietario_propietario")
+	String idPropietarioPropietario;
+	
+	*/
+	
+	
+	
+	
 }

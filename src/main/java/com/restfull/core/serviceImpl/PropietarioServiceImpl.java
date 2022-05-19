@@ -17,6 +17,7 @@ public class PropietarioServiceImpl implements PropietarioService{
 	@Autowired
 	PropietarioRepository propietarioRepository;
 	
+	@Override
 	public List<Propietario> findAllPropietarios() {
 		return propietarioRepository.findAll();
 	}
