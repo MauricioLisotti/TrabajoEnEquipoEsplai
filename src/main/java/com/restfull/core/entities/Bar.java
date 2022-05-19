@@ -44,9 +44,26 @@ public class Bar {
 	@Column(name="redessociales")
 	String redessociales;
 
+	@Column(name="id_propietario_propietario")
+	String idPropietario;
 	
 	
-	
+	public String getRedessociales() {
+		return redessociales;
+	}
+
+	public void setRedessociales(String redessociales) {
+		this.redessociales = redessociales;
+	}
+
+	public String getIdPropietario() {
+		return idPropietario;
+	}
+
+	public void setIdPropietario(String idPropietario) {
+		this.idPropietario = idPropietario;
+	}
+
 	public Long getIdBar() {
 		return idBar;
 	}

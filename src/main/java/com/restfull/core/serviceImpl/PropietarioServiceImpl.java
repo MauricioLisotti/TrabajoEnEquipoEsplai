@@ -59,7 +59,7 @@ public class PropietarioServiceImpl implements PropietarioService{
 			propietarioRepository.save(propietarioToUpdate);
 			return "Propietario modificado";
 		}
-		return "Error al modificar el bar";
+		return "Error al modificar el propietario";
 	}
 
 	

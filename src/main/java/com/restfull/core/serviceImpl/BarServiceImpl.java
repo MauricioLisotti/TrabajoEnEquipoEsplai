@@ -65,6 +65,8 @@ public class BarServiceImpl implements BarService{
 			barToUpdate.setDescripcionBar(barUpdated.getDescripcionBar());
 			barToUpdate.setEspecialidadesBar(barUpdated.getEspecialidadesBar());
 			barToUpdate.setRedesSociales(barUpdated.getRedesSociales());
+			barToUpdate.setIdPropietario(barUpdated.getIdPropietario());
+			
 			
 			
 			barRepository.save(barToUpdate);
