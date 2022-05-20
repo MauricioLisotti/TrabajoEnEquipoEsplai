@@ -40,7 +40,7 @@ public class PromocionServiceImpl implements PromocionService{
 	public String deletePromocion(Long id) {
 		if (promocionRepository.findById(id).isPresent()) {
 			promocionRepository.deleteById(id);
-			return "Propietario eliminado correctamente.";
+			return "promocion eliminado correctamente.";
 		}
 		return "Error! La promocion no existe";
 	}
